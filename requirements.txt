@@ -1,6 +1,7 @@
-requests
-urllib3
 argparse
-sphinx
 pytest
+requests
+requests_kerberos
 setuptools
+sphinx
+urllib3
