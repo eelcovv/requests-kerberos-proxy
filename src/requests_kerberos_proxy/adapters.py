@@ -13,6 +13,8 @@ class HTTPAdapterWithProxyKerberosAuth(requests.adapters.HTTPAdapter):
     def proxy_headers(proxy):
         headers = {}
         auth = rk.HTTPKerberosAuth()
-        negotiate_details = auth.generate_request_header(None, parse_url(proxy).host, is_preemptive=True)
-        headers['Proxy-Authorization'] = negotiate_details
+        negotiate_details = auth.generate_request_header(
+            None, parse_url(proxy).host, is_preemptive=True
+        )
+        headers["Proxy-Authorization"] = negotiate_details
         return headers

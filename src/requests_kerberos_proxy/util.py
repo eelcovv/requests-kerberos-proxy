@@ -11,5 +11,5 @@ def get_session(proxies=None) -> type(Session):
 
         # kerberos authentication
         http_adapter_with_proxy_kerberos_auth = HTTPAdapterWithProxyKerberosAuth()
-        session.mount('https://', http_adapter_with_proxy_kerberos_auth)
+        session.mount("https://", http_adapter_with_proxy_kerberos_auth)
     return session

@@ -19,7 +19,7 @@ session.proxies = proxies
 
 # kerberos authentication
 http_adapter_with_proxy_kerberos_auth = HTTPAdapterWithProxyKerberosAuth()
-session.mount('https://', http_adapter_with_proxy_kerberos_auth)
+session.mount("https://", http_adapter_with_proxy_kerberos_auth)
 
 url = "https://example.com"
 request = session.get(url)
