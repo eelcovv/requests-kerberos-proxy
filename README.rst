@@ -27,7 +27,7 @@ An example of how to do this for some Linux distributions is shown below::
     # For EL based distros
     dnf install gcc python3-devel krb5-devel
 
- For Windows this is not required.
+For Windows this is not required.
 
 
 .. _pyscaffold-notes:
